@@ -6,6 +6,8 @@ import Form from './views/form/Form'
 import Detail from './views/Detail/Detail';
 import About from './components/About/About.jsx';
 import Page404 from './components/Page404/page404.jsx'
+import axios from 'axios';
+axios.defaults.baseURL = 'http://localhost:3001/'
 
 function App() {
   return (
