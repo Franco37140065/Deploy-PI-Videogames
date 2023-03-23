@@ -1,0 +1,14 @@
+
+.loadingContainer{
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    border-radius: 10px;
+}
+.loadingStyle{
+    width: 100%;
+    max-width: 700px;
+     height: auto; 
+  
+}

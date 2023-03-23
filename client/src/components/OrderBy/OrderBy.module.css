@@ -1,0 +1,25 @@
+.orderContainer{
+    display: flex;
+    justify-content: center;
+}
+.itemContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+/*     background-color: green; */
+    width: 500px;
+    height: auto;
+    padding: 5px;
+}
+
+
+.select2 {
+    background-color: rgb(12, 12, 95);
+    color: white;
+    border-radius: 10px;
+    /* width: 8%;
+    padding: 5px; */
+    font-size: medium;
+    padding: 5px;
+    margin: 5px;
+}

@@ -1,0 +1,47 @@
+
+
+.card{
+	width: 20em;
+	margin: 18px;
+	border-radius: 6px;
+	overflow: hidden;
+    background-image: url('../../imagenes/neon1.jpg');
+	box-shadow: 10px 10px 10px rgba(255, 0, 0, 0.2);
+	transition: all 100ms ease-out;
+	cursor: default;
+	text-align: center;
+	padding: 10px;
+}
+.image {    
+    width: 300px;
+    height: 300px;
+    left: 100px;
+    top: 100px;
+    border-radius: 6px;
+    object-fit: cover;
+    }
+.infoContGenres {
+		font-style: oblique;
+		display: flex;
+		justify-content: center;
+	}
+
+.card h4{
+color: white;
+font-size: 20px;}
+.genres {color: white;}
+
+.btnDetail{
+    width: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #25A2FF;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.btnDetail:hover{
+    cursor: pointer;
+}
+.rating{
+    color: #fcff37;
+}

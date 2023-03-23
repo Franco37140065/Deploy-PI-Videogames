@@ -1,0 +1,19 @@
+.head{
+padding: 10px;
+}
+
+.Home{
+	
+    text-align: center;
+	width: 100%;
+}
+
+.head h3 {
+	color: white;
+	text-align: center;
+    font-size: 20px;
+    
+}
+.about{
+	text-align: center;
+}
