@@ -7,7 +7,7 @@ import Detail from './views/Detail/Detail';
 import About from './components/About/About.jsx';
 import Page404 from './components/Page404/page404.jsx'
 import axios from 'axios';
-axios.defaults.baseURL = 'http://localhost:3001/'
+axios.defaults.baseURL = 'https://deploy-pi-videogames-production-4c06.up.railway.app/'
 
 function App() {
   return (
