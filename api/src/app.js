@@ -9,18 +9,13 @@ require('./db.js');
 const server = express();
 
 server.name = 'API';
-const cors = require('cors')
 
-const whiteList = ['https://deploy-pi-videogames-git-main-franco37140065.vercel.app','https://deploy-pi-videogames-production-4c06.up.railway.app/']
-server.use (cors({
-  origin:whiteList
-}))
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 server.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://deploy-pi-videogames-awayy1l05-franco37140065.vercel.app'); // update to match the domain you will make the request from
+  res.header('Access-Control-Allow-Origin', 'https://deploy-pi-videogames-onbcht0d1-franco37140065.vercel.app'); // update to match the domain you will make the request from
   res.header('Access-Control-Allow-Credentials', 'true');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
