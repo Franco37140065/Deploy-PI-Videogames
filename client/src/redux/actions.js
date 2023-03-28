@@ -13,7 +13,7 @@ export const GET_NAME_GAME = 'GET_NAME_GAME';
 
 export const getGames = () => {
 return async function(dispatch) {
-  let json = await  axios.get("/videogames",{
+  let json = await  axios.get("https://deploy-pi-videogames-production-4c06.up.railway.app/videogames",{
 
   });
   return dispatch({
@@ -26,7 +26,7 @@ return async function(dispatch) {
 
 export const getGenres= () => {
   return async function (dispatch) {
-   let json = await axios.get(`/genresRouter`)
+   let json = await axios.get(`https://deploy-pi-videogames-production-4c06.up.railway.app/genresRouter`)
     
     return dispatch({ 
       type: GET_GENRES, 
@@ -39,7 +39,7 @@ export const getGenres= () => {
 
 export const postGame = (payload) => {
   return async function (dispatch){
-    const response = await axios.post('/videogames/',payload)
+    const response = await axios.post('https://deploy-pi-videogames-production-4c06.up.railway.app/videogames/',payload)
     return response;
   }
 }
@@ -47,7 +47,7 @@ export const postGame = (payload) => {
 export const getDetail = (id) => {
   return async function(dispatch){
     try {
-      let json = await axios.get('/videogames/' + id);
+      let json = await axios.get('https://deploy-pi-videogames-production-4c06.up.railway.app/videogames/' + id);
       return dispatch ({
         type: GET_DETAILS, 
         payload: json.data
@@ -92,7 +92,7 @@ export const getNameGame = (name)=>{
 
   return async function (dispatch){
     try{
-        let json = await axios.get(`/videogames?name=${name}`)        
+        let json = await axios.get(`https://deploy-pi-videogames-production-4c06.up.railway.app/videogames?name=${name}`)        
       return dispatch ({
         type: GET_NAME_GAME,
         payload: json.data
