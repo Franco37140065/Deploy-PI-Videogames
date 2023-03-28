@@ -9,12 +9,9 @@ require('./db.js');
 const server = express();
 
 server.name = 'API';
-const cors = require('cors')
 
-const whiteList = ['https://deploy-pi-videogames-git-main-franco37140065.vercel.app','https://deploy-pi-videogames-production-4c06.up.railway.app/']
-server.use (cors({
-  origin:whiteList
-}))
+
+
 server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 server.use(bodyParser.json({ limit: '50mb' }));
 server.use(cookieParser());
